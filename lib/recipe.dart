@@ -14,12 +14,12 @@ class Recipe {
 
   static List<Recipe> samples = [
     Recipe(
-      'Spaghetti and Meatballs',
+      'MoMo',
       'assets/2126711929_ef763de2b3_w.jpg',
       4,
       [
-        Ingredient(1, 'box', 'Spaghetti',),
-        Ingredient(4, '', 'Frozen Meatballs',),
+        Ingredient(1, 'box', 'Flour',),
+        Ingredient(2, 'kg', 'Minced meat',),
         Ingredient(0.5, 'jar', 'sauce',),
       ],
     ),

@@ -3,10 +3,12 @@ import "recipe.dart";
 import 'recipe_detail.dart';
 
 void main() {
-  runApp(RecipeApp());
+  runApp(const RecipeApp());
 }
 
 class RecipeApp extends StatelessWidget {
+  const RecipeApp({Key? key}) : super(key: key);
+
   // This widget is the root of the application.
 // 1
   @override
@@ -25,14 +27,14 @@ class RecipeApp extends StatelessWidget {
         ),
       ),
       // 6
-      home: MyHomePage(title: 'Recipe Calculator'),
+      home: const MyHomePage(title: 'Recipe Calculator'),
     );
   }
 
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -109,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
               style: const TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.w700,
-                fontFamily: 'Palatino',
+                fontFamily: 'Palatine',
               ),
             )
           ],
